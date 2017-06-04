@@ -1,0 +1,1 @@
+from .kingsearch import app
