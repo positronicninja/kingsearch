@@ -47,3 +47,10 @@ def search_line(pat, txt, line):
     if len(occ) is 0:
         return None
     return occ
+
+# def extract_sentances(txt, results, query):
+#     for occurence in results:
+#         occurence['in_sentence'] = find_sentance(occurence, txt, query)
+#     return results
+
+# def find_sentance(occurence, txt):
