@@ -1,0 +1,8 @@
+MANIFEST.in
+kingsearch/__init__.py
+kingsearch/kingsearch.py
+kingsearch.egg-info/PKG-INFO
+kingsearch.egg-info/SOURCES.txt
+kingsearch.egg-info/dependency_links.txt
+kingsearch.egg-info/requires.txt
+kingsearch.egg-info/top_level.txt
