@@ -16,6 +16,17 @@ def index():
         king_text = king_file.read()
         king_file.close()
 
+        search_result = search_text(query, king_text)
+        # search_result = extract_sentances(king_text, search_result, query)
+
+        # tokenizer = nltk.data.load('nltk:tokenizers/punkt/PY3/english.pickle')
+        tokens = nltk.word_tokenize(king_text)
+        text = nltk.Text(tokens)
+        # sentences = nltk.sent_tokenize(king_text)
+        # sentences = [nltk.word_tokenize(sent) for sent in sentences]
+        # sentences = [nltk.pos_tag(sent) for sent in sentences]
+        print(text.concordance(query))
+
         results_dict = {
             'query_text': query,
             'number_of_occurrences': len(search_result),
